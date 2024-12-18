@@ -12,18 +12,18 @@ function Intro(){
           <section className="flex flex-row items-center justify-center h-auto px-4 md:flex-col ">
             <div className=" md:flex md:flex-row pl-20 container pt-10 transition-opacity flex-col">
               <div className="pt-16 px-1 pl-28">
-                <p className="text-4xl mt-4 text-gray-300 font-serif ">
+                <p className="md:text-4xl mt-4 text-gray-300 font-serif text-xl ">
                   Hello, My name is
                 </p>
-                <h1 className="text-9xl text-white font-bold mb-8 px-5 font-serif">
+                <h1 className="md:text-9xl text-white font-bold mb-8 px-5 font-serif text-2xl">
                   David Martin.
                 </h1>
-                <p className="text-gray-300 text-2xl">
+                <p className="text-gray-300 md:text-2xl text-lg">
                   I'm an aspiring Software Engineer passionate about exploring
                   and building with the latest technologies.
                 </p>
 
-                <div className=" text-4xl pt-5 ">
+                <div className=" md:text-4xl pt-5  text-xl">
                   <ul className="flex space-x-10">
                     <li className="text-white hover:text-green-600">
                       <a href="mailto:david2020martin@gmail.com">
@@ -55,9 +55,10 @@ function Intro(){
               </div>
             </div>
           </section>
+          
           <section>
             <AboutMe />
-            
+
           </section>
           <div class="container my-24 mx-auto md:px-6 bg">
             <section class="mb-32">

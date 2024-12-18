@@ -35,7 +35,8 @@ function AboutMe() {
                     <li class="mb-2">Python</li>
                     <li class="mb-2">HTML/CSS</li>
                     <li class="mb-2">Javascript</li>
-                    <li class="mb-2">Figma</li>
+                    <li class="mb-2">Node</li>
+                    <li class="mb-2">React</li>
                     <li class="mb-2">Flask</li>
                     <li class="mb-2">Linux</li>
 
