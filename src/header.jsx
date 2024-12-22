@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { faEnvelope, faL } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import React,{useEffect} from "react";
+import Header from "./header";
+import AboutMe from "./about";
+import swiper from "swiper";
 
-function Header({ setActiveSection }) {
-  const [isMenuOpen, toggleMenu] = useState(false);
+function Intro(){
 
   const openMenu = () => {
     toggleMenu(!isMenuOpen);
@@ -67,9 +67,7 @@ function Header({ setActiveSection }) {
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-  );
+      </html>
+    );
 }
-
-export default Header;
+export default Intro
