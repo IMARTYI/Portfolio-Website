@@ -19,7 +19,7 @@ function Pastprojects(){
         }}
         >
 
-          <SwiperSlide className="bg-">Test # 1</SwiperSlide>
+          <SwiperSlide className="bg-slate-400">Test # 1</SwiperSlide>
           <SwiperSlide>Test # 1</SwiperSlide>
           <SwiperSlide>Test # 1</SwiperSlide>``
           <SwiperSlide>Test # 1</SwiperSlide>

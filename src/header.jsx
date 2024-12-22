@@ -1,16 +1,16 @@
-import React,{useEffect} from "react";
+import React,{useEffect, useState} from "react";
 import Header from "./header";
 import AboutMe from "./about";
 import swiper from "swiper";
 
 function Intro(){
+  const [isMenuOpen,toggleMenu] = useState(false)
 
   const openMenu = () => {
     toggleMenu(!isMenuOpen);
   };
   
   return (
-
     <nav className=" flex flex-row bg-green-600 bg-opacity-50 w-full">
       <div className="flex justify-start md:hidden ml-10">
         <button onClick={openMenu} className="text-white text-4xl">
@@ -67,7 +67,8 @@ function Intro(){
             </li>
           </ul>
         </div>
-      </html>
+      </div>
+      </nav>
     );
 }
 export default Intro
