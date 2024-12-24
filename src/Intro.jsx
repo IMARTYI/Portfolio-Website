@@ -1,34 +1,34 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import Header from "./header";
 import AboutMe from "./about";
 import swiper from "swiper";
 import Pastprojects from "./port";
 
-function Intro(){
+function Intro() {
 
-    return (
-      <html lang="en" className="!scroll-smooth">
-        <div lang="en" className="!scroll-smooth font-sans antialiased">
-          <Header />
-          <section className="md:flex flex-row items-center justify-center h-auto px-4 md:flex-col">
-  <div className="container pt-10 transition-opacity flex flex-col md:flex-row md:pl-20">
+  return (
+
+    <html lang="en" className="!scroll-smooth">
+      <div lang="en" className="!scroll-smooth font-sans antialiased">
+        <Header />
+        <section className="flex flex-col xl:flex-row items-center justify-center">
+  <div className="container transition-opacity flex flex-col xl:flex-row xl:pl-20">
     {/* Text Section */}
-    <div className="pt-16 px-4 md:pl-28 text-center md:text-left">
+    <div className="pt-16 px-4 text-center xl:text-left bg-gray-200">
       <p className="text-gray-300 font-serif text-xl md:text-4xl mt-4">
         Hello, My name is
       </p>
-      <h1 className="text-white font-bold font-serif text-2xl md:text-9xl mb-8">
+      <h1 className="text-white font-bold font-serif text-4xl md:text-9xl mb-8">
         David Martin.
       </h1>
       <p className="text-gray-300 text-lg md:text-2xl">
-        I'm an aspiring Software Engineer passionate about exploring
-        and building with the latest technologies.
+        I'm an aspiring Software Engineer passionate about exploring and
+        building with the latest technologies.
       </p>
 
       {/* Social Links */}
-
       <div className="pt-5 text-xl md:text-4xl">
-        <ul className="flex justify-center md:justify-start space-x-10">
+        <ul className="flex justify-center xl:justify-start space-x-10">
           <li className="text-white hover:text-green-600">
             <a href="mailto:david2020martin@gmail.com">
               <i className="fa-solid fa-envelope"></i>
@@ -39,6 +39,7 @@ function Intro(){
               <i className="fa-brands fa-github"></i>
             </a>
           </li>
+
           <li className="text-white hover:text-green-600">
             <a href="https://www.linkedin.com/in/david-martin-a65351243/">
               <i className="fa-brands fa-linkedin"></i>
@@ -47,11 +48,10 @@ function Intro(){
         </ul>
       </div>
     </div>
-
     {/* Image Section */}
-    <div className="flex justify-center mt-8 md:mt-0">
+    <div className="flex justify-center  bg-slate-50">
       <img
-        className="rounded-full w-1/2 h-1/2 object-cover xl:w-3/4 xl:h-3/4"
+        className="rounded-full w-1/2 h-3/4 object-cover xl:w-3/4 xl:h-3/4 xl:aspect-auto aspect-square"
         src="../IMG_0772.jpg"
         alt="A picture of David Martin"
       />
@@ -59,22 +59,20 @@ function Intro(){
   </div>
 </section>
 
+<section className=" bg-cyan-100 w-full mb-44">
+  <AboutMe />
+</section>
+        
+        <div class="container my-24 mx-auto md:px-6 bg">
+          <section class="mb-32">
+            <h2 class="mb-12 text-center text-3xl font-bold text-white">
+              Past Projects
+            </h2>
+            <section className=" flex justify-center w-1/2 items-center">
+              <Pastprojects />
+            </section>
 
-          <section className="mb-2 ">
-            <AboutMe />
-
-          </section>\
-
-          <div class="container my-24 mx-auto md:px-6 bg">
-            <section class="mb-32">
-              <h2 class="mb-12 text-center text-3xl font-bold text-white">
-                Past Projects
-              </h2>
-              <section className=" flex justify-center w-1/2 items-center">
-                <Pastprojects/>
-              </section>
-
-              {/* <div class="grid gap-6 lg:grid-cols-3">
+            {/* <div class="grid gap-6 lg:grid-cols-3">
                 <div
                   class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
                   data-te-ripple-init
@@ -215,10 +213,10 @@ function Intro(){
                   </a>
                 </div>
               </div> */}
-            </section>
-          </div>
+          </section>
         </div>
-      </html>
-    );
+      </div>
+    </html>
+  );
 }
-export default Intro
+export default Intro;
