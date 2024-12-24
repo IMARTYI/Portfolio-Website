@@ -9,7 +9,6 @@ function Intro(){
   const openMenu = () => {
     toggleMenu(!isMenuOpen);
   };
-  
   return (
     <nav className=" flex flex-row bg-green-600 bg-opacity-50 w-full">
       <div className="flex justify-start md:hidden ml-10">
@@ -48,7 +47,6 @@ function Intro(){
                 About Me
               </a>
             </li>
-            
             <li className="mr-4">
               <a
                 href="#section4"

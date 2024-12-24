@@ -18,7 +18,7 @@ function AboutMe() {
                   <div class="mt-6 flex flex-wrap gap-4 justify-center">
                     <a
                       href="#"
-                      class="g-gray-300 hover:bg-gray-400 text-black-100 py-2 px-4 rounded"
+                      class="g-gray-300 hover:bg-gray-400 text-white  py-2 px-4 rounded"
                     >
                       Resume
                     </a>
@@ -27,18 +27,18 @@ function AboutMe() {
                 <hr class="my-6 border-t border-gray-800" />
                 <div class="flex flex-col">
                   <span class="text-white uppercase font-bold tracking-wider mb-2">
-                    Skills
+                    Technical Skills
                   </span>
                   <ul class="text-white">
                     <li class="mb-2">Java</li>
-                    <li class="mb-2">SQL</li>
                     <li class="mb-2">Python</li>
-                    <li class="mb-2">HTML/CSS</li>
-                    <li class="mb-2">Javascript</li>
                     <li class="mb-2">Node</li>
                     <li class="mb-2">React</li>
                     <li class="mb-2">Flask</li>
-                    <li class="mb-2">Linux</li>
+                    <li class="mb-2">SQL</li>
+                    <li class="mb-2">HTML/CSS</li>
+                    <li class="mb-2">Javascript</li>
+                    
 
                     <li></li>
                   </ul>
@@ -49,36 +49,26 @@ function AboutMe() {
               <div class="bg-g shadow rounded-lg p-6">
                 <h2 class=" text-white text-xl font-bold mb-4">About Me</h2>
                 <p class="text-white">
-                  
-Here’s a refined version of your text:
+
 
 Welcome to my website! My name is David Martin, and I am a Computer Science student at Brock University. I began my programming journey at the age of 18 during my final year of high school. Since then, I’ve been passionate about exploring the vast and exciting world of Computer Science while honing my practical coding skills. Below, you’ll find a selection of projects I’ve worked on throughout the years.
                 </p>
 
                 <h2 class=" text-white text-xl font-bold mt-6 mb-4">
-                  Projects
+                  Experience
                 </h2>
 
                 <div class="mb-6">
                   <div class="flex justify-between">
-                    <span class="text-white-600 font-bold">Web Developer</span>
+                    <span class="text-white-600 font-bold">Front End Developer</span>
                     <p>
-                      <span class="text-white mr-2">at ABC Company</span>
-                      <span class="text-white-600">2017 - 2019</span>
+                      <span class="text-white mr-2">Vertmix</span>
+                      <span class="text-white-600"></span>
                     </p>
                   </div>
                   <p class="mt-2 text-white"></p>
                 </div>
-                <div class="mb-6">
-                  <div class="flex justify-between">
-                    <span class="text-white-600 font-bold">Web Developer</span>
-                    <p>
-                      <span class="text-white-600 mr-2">at ABC Company</span>
-                      <span class="text-white-600">2017 - 2019</span>
-                    </p>
-                  </div>
-                  <p class="mt-2 text-white"></p>
-                </div>
+                
               </div>
             </div>
           </div>
