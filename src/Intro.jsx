@@ -69,7 +69,7 @@ function Intro() {
             <h2 class="mb-12 text-center text-4xl font-bold text-white">
               Past Projects
             </h2>
-            <section className=" flex justify-center w-full items-center bg-slate-50">
+            <section className=" flex justify-center w-full items-center">
               <Pastprojects />
             </section>
           </section>
