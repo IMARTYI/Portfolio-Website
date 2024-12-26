@@ -55,20 +55,36 @@ Welcome to my website! My name is David Martin, and I am a Computer Science stud
                 </p>
 
                 <h2 class=" text-white text-xl font-bold mt-6 mb-4">
-                  Experience
+                  Interests
                 </h2>
 
                 <div class="mb-6">
                   <div class="flex justify-between">
-                    <span class="text-white-600 font-bold">Front End Developer</span>
+                    <span class="text-white-600 font-bold">Web Development</span>
                     <p>
-                      <span class="text-white mr-2">Vertmix</span>
-                      <span class="text-white-600"></span>
+                     
                     </p>
                   </div>
                   <p class="mt-2 text-white"></p>
                 </div>
+                <div class="mb-6">
+                  <div class="flex justify-between">
+                    <span class="text-white-600 font-bold">NLP</span>
+                  
+                      
+                  </div>
+                  <p class="mt-2 text-white"></p>
+                </div>
                 
+                <div class="mb-6">
+                  <div class="flex justify-between">
+                    <span class="text-white-600 font-bold">Computer Networking</span>
+                    <p>
+                      
+                    </p>
+                  </div>
+                  <p class="mt-2 text-white"></p>
+                </div>
               </div>
             </div>
           </div>
