@@ -3,6 +3,7 @@ import Header from "./header";
 import AboutMe from "./about";
 import swiper from "swiper";
 import Pastprojects from "./port";
+import mainPhoto from "./assets/IMG_0772.jpg"
 
 function Intro() {
 
@@ -51,7 +52,7 @@ function Intro() {
     <div className="flex justify-center items-center mt-8 xl:mt-0 xl:w-1/2">
       <img
         className="rounded-full object-cover w-1/2 h-1/2 lg:w-2/3 xl:w-2/3 aspect-square"
-        src="../IMG_0772.jpg"
+        src={mainPhoto}
         alt="A picture of David Martin"
       />
     </div>
