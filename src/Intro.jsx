@@ -4,6 +4,7 @@ import AboutMe from "./about";
 import swiper from "swiper";
 import Pastprojects from "./port";
 import mainPhoto from "./assets/IMG_0772.jpg"
+import Education from "./education";
 
 function Intro() {
 
@@ -62,6 +63,10 @@ function Intro() {
 
 <section className="w-full mb-44">
   <AboutMe />
+</section>
+
+<section>
+<Education/>
 </section>
         
         <div class="container my-24 mx-auto md:px-6 bg">
