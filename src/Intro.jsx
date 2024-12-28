@@ -67,7 +67,7 @@ function Intro() {
         <div class="container my-24 mx-auto md:px-6 bg">
 
           <section class="mb-32">
-            <h2 class="mb-12 text-center text-4xl font-bold text-white">
+            <h2 class="mb-12 text-center text-4xl font-sarif font-bold text-white">
               Past Projects
             </h2>
             <section className=" flex justify-center w-full items-center">
