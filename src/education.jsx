@@ -6,19 +6,19 @@ function Education(){
 
     return(
         <>
-<div class="flex flex-col items-center justify-center m-4">
+<div class="flex flex-col items-center justify-center m-4 w-full">
   <div class="w-full md:w-9/12">
     <div
-      class="bg-green-600 bg-opacity-50 shadow-xl border border-gray-300 rounded-lg hover:border-green-400 hover:shadow-2xl transition duration-300"
+      class="bg-green-600  shadow-xl border border-gray-300 rounded-lg hover:border-green-400 hover:shadow-2xl transition duration-300"
     >
       <div class="p-6">
         <div class="flex flex-row justify-between items-center">
-          <h5 class="md:text-xl font-serif text-white">Bachelor of Science in Computer Science (Honours)</h5>
+          <h5 class="md:text-xl font-serif text-black">Bachelor of Science in Computer Science (Honours)</h5>
           <small class="text-gray-200">Sept 2020 - July2025</small>
         </div>
 
         <div className=" flex flex-col space-y-2">  
-        <h6 class="text-lg font-serifs text-white font-serif">
+        <h6 class="text-lg font-serifs text-black font-serif">
            Brock University
         </h6>
         <div  className=" ">
@@ -28,10 +28,10 @@ function Education(){
         </div>
         
         <div class="py-2">
-          <p class="text-gray-100">
+          <p class="text-black font-semibold">
             Relevant Course Material
           </p>
-          <ul class="list-disc list-inside mt-2 text-white">
+          <ul class="list-disc list-inside mt-2 text-black">
             <li>
               
               Data Structures & Algorithms, Computer Architecture, Computer Networking, Mobile
@@ -42,13 +42,12 @@ function Education(){
           </ul>
         </div>
         <div class="py-2">
-          <p class="text-gray-100">Notable projects</p>
+          <p class="text-gray-100 font-semibold ">Notable projects</p>
           <ul class="list-disc list-inside mt-2 text-gray-100">
-          <li> <h6 className="font-bold">Detoxifying ChatGPT via Prompt Engineering:</h6> Leveraged advanced techniques to filter harmful or inappropriate outputs utilizing the Safe edit data set and prompt rewo
-</li>
+          <li> Detoxifying ChatGPT via Prompt Engineering: Leveraged advanced techniques to filter harmful or inappropriate outputs utilizing the safe edit dataset and prompt enginnering techniques.</li>
 
             <li>
-              Genetic Algorithm to decrypt text. Employing Algorithms such as tournament selection, Crossover methods, Mutation and Elieteism
+              Genetic Algorithm to decrypt text. Employing Algorithms such as tournament selection, Crossover methods, Mutation and Elieteism. Regularly converged on 93% accuracy. 
             </li>
           </ul>
         </div>
