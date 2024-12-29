@@ -6,16 +6,17 @@ import mainPhoto from "./assets/IMG_0772.jpg";
 import Education from "./education";
 
 function Intro() {
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Add the animation classes when in view
+            
             entry.target.classList.add("opacity-100", "translate-y-0");
             entry.target.classList.remove("opacity-0", "translate-y-10");
           } else {
-            // Reset the animation classes when out of view
+            
             entry.target.classList.remove("opacity-100", "translate-y-0");
             entry.target.classList.add("opacity-0", "translate-y-10");
           }
