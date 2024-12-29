@@ -55,6 +55,16 @@ function Intro(){
                 Education
               </a>
             </li>
+
+            <li className="mr-4">
+              <a
+                href="#section4"
+                className="bg-blue-00 bg-opacity-50 text-white rounded-md px-3 py-2  text-xl font-medium hover:bg-white hover:text-green-600 transition-all duration-300"
+              >
+                Projects
+              </a>
+            </li>
+
             <li>
               <a
                 href="index.jsx"

@@ -1,4 +1,5 @@
 import React from "react";
+import brockPhoto from "./assets/brock.png"
 
 
 function Education(){
@@ -12,46 +13,46 @@ function Education(){
     >
       <div class="p-6">
         <div class="flex flex-row justify-between items-center">
-          <h5 class="text-xl font-serif text-white">Bachelor of Science in Computer Science</h5>
-          <small class="text-gray-200">2020 - 2020</small>
+          <h5 class="md:text-xl font-serif text-white">Bachelor of Science in Computer Science (Honours)</h5>
+          <small class="text-gray-200">Sept 2020 - July2025</small>
         </div>
-        <a href="https://example.org" target="_blank">
-          <h6 class="text-lg font-sarif text-blue-400 hover:text-blue-300 hover:underline mt-1">
+
+        <div className=" flex flex-col space-y-2">  
+        <h6 class="text-lg font-serifs text-white font-serif">
            Brock University
-          </h6>
-        </a>
-      
+        </h6>
+        <div  className=" ">
+
+<img alt="image" src={brockPhoto} className="rounded-md h-20 w-20"/>'
+</div>
+        </div>
+        
         <div class="py-2">
           <p class="text-gray-100">
-            I published two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+            Relevant Course Material
           </p>
-          <ul class="list-disc list-inside mt-2 text-blue-400">
+          <ul class="list-disc list-inside mt-2 text-white">
             <li>
-              <a href="https://example.com" class="hover:text-blue-300 hover:underline">
-                Fast and Accurate Object Detection with a Single Convolutional Neural Network
-              </a>
+              
+              Data Structures & Algorithms, Computer Architecture, Computer Networking, Mobile
+              Computing, Internet Technologies, Natural Language Processing, Machine Learning
+              
             </li>
-            <li class="text-white">Face mask detection using a single convolutional neural network.</li>
+
           </ul>
         </div>
         <div class="py-2">
-          <p class="text-gray-100">Extracurricular Activities</p>
+          <p class="text-gray-100">Notable projects</p>
           <ul class="list-disc list-inside mt-2 text-gray-100">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li> <h6 className="font-bold">Detoxifying ChatGPT via Prompt Engineering:</h6> Leveraged advanced techniques to filter harmful or inappropriate outputs utilizing the Safe edit data set and prompt rewo
+</li>
+
             <li>
-              Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil
-              excepturi velit a animi laborum hic similique.
+              Genetic Algorithm to decrypt text. Employing Algorithms such as tournament selection, Crossover methods, Mutation and Elieteism
             </li>
           </ul>
         </div>
-        <div class="pt-4">
-          <a
-            href="https://example.com"
-            class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-400 transition duration-300"
-          >
-            My academic record
-          </a>
-        </div>
+       
       </div>
     </div>
   </div>
