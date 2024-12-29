@@ -97,7 +97,7 @@ function Intro() {
         </section>
 
         <section
-          className="bg-#D4CBB5 flex flex-col space-y-5 p-20 border-green-600 border-solid fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out"
+          className="bg-#D4CBB5 flex flex-col space-y-5 p-10 border-green-600 border-solid fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out"
         >
           <h1 className="text-4xl font-serif text-white text-center">
             Education
