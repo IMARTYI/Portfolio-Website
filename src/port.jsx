@@ -2,6 +2,9 @@ import React from "react";
 import fullstackImage from "./assets/fullstack.png";
 import FTPImage from "./assets/FTP.png";
 import SkateImage from "./assets/skate.png"
+import translateImage from "./assets/translate.png"
+import currencyImage from "./assets/currency.png"
+
 
 function Pastprojects() {
   const projects = [
@@ -18,7 +21,7 @@ function Pastprojects() {
     },
     {
       title: "FTP Server",
-      description: "An FTP server built for efficient file transfers and network management.",
+      description: "A Client-Server architecture built for efficient file transfers and network management using flask.",
       image: FTPImage,
       badges: ["Python", "Flask", "Open Telemetry"],
       links: {
@@ -30,9 +33,34 @@ function Pastprojects() {
 
     {
       title: "Skateboard Trick Recognition App",
-      description: " A Work In progress app that harnesses ",
+      description: " An in progress app that harnesses the capabilites of Media Pipe's computer vision and Pytorch's neural network to correctly label skateboarding tricks.",
       image: SkateImage,
-      badges: ["Python", "Open CV", "Media Pipe",""],
+      badges: ["Python", "Open CV", "Media Pipe","Pytorch"],
+      links: {
+        email: "mailto:?subject=FTP%20Server&body=Check%20it%20out:%20https%3a%2f%2fexample.com",
+        github: "https://github.com/example/ftp-server",
+        twitter: "https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fexample%2Fftp-server",
+      },
+    },
+
+    {
+      title: "Talk2Me Translation app",
+      description: "An application developed for Android utilizing Google Translate's API for real time accurate translations",
+      image: translateImage,
+      badges: ["Java","XML","SQLite","Google Translate API"],
+      links: {
+        email: "mailto:?subject=FTP%20Server&body=Check%20it%20out:%20https%3a%2f%2fexample.com",
+        github: "https://github.com/example/ftp-server",
+        twitter: "https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fexample%2Fftp-server",
+      },
+    },
+
+
+    {
+      title: "Currency Exchange",
+      description: "A web application utilizing an API to perform real-time currency converions",
+      image: currencyImage,
+      badges: ["HTML","CSS","Javascript"],
       links: {
         email: "mailto:?subject=FTP%20Server&body=Check%20it%20out:%20https%3a%2f%2fexample.com",
         github: "https://github.com/example/ftp-server",
@@ -44,10 +72,11 @@ function Pastprojects() {
   return (
     <div className="p-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
         {projects.map((project, index) => (
           <div
             key={index}
-            className="flex flex-col font-bold text-white transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:translate-y-2 rounded-b-lg"
+            className="flex flex-col font-bold text-white transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:translate-y-2 rounded-b-lg rounded-md"
           >
             <div className="relative overflow-hidden">
               <img
