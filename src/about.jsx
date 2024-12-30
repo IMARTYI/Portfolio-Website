@@ -6,7 +6,7 @@ function AboutMe() {
       <div className="container mx-auto py-8 px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Profile Section */}
-          <div className="col-span-1 md:col-span-1 bg-green-600 bg-opacity-50 shadow-lg rounded-lg p-6 border-white ">
+          <div className="col-span-1 md:col-span-1 bg-green-600 bg-opacity-50 shadow-lg rounded-lg p-6 border-white border ">
             <div className="flex flex-col items-center">
               <img
                 src="david3.jpg"
@@ -40,7 +40,7 @@ function AboutMe() {
           </div>
 
           {/* About Me Section */}
-          <div className="col-span-1 md:col-span-3 bg-green-600 bg-opacity-50 shadow-lg rounded-lg p-6 border-white">
+          <div className="col-span-1 md:col-span-3 bg-green-600 bg-opacity-50 shadow-lg rounded-lg p-6 border-white border hover:border-green-600">
             <h2 className="text-white text-xl font-bold mb-4">About Me</h2>
             <p className="text-white">
               Welcome to my website! My name is David Martin, and I am a

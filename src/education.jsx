@@ -9,16 +9,16 @@ function Education(){
 <div class="flex flex-col items-center justify-center m-4 w-full">
   <div class="w-full md:w-9/12">
     <div
-      class="bg-green-600  shadow-xl border border-gray-300 rounded-lg hover:border-green-400 hover:shadow-2xl transition duration-300"
+      class="bg-green-600  shadow-xl border border-gray-300 rounded-lg hover:border-green-400 hover:shadow-2xl transition duration-300 bg-opacity-50"
     >
       <div class="p-6">
-        <div class="flex flex-row justify-between items-center">
-          <h5 class="md:text-xl font-serif text-black">Bachelor of Science in Computer Science (Honours)</h5>
+        <div class="flex flex-row justify-between items-center">  
+          <h5 class="md:text-xl font-serif text-white">Bachelor of Science in Computer Science (Honours)</h5>
           <small class="text-gray-200">Sept 2020 - July2025</small>
         </div>
 
         <div className=" flex flex-col space-y-2">  
-        <h6 class="text-lg font-serifs text-black font-serif">
+        <h6 class="text-lg font-serifs text-white font-serif">
            Brock University
         </h6>
         <div  className=" ">
@@ -28,10 +28,10 @@ function Education(){
         </div>
         
         <div class="py-2">
-          <p class="text-black font-semibold">
+          <p class="text-white font-semibold">
             Relevant Course Material
           </p>
-          <ul class="list-disc list-inside mt-2 text-black">
+          <ul class="list-disc list-inside mt-2 text-white">
             <li>
               
               Data Structures & Algorithms, Computer Architecture, Computer Networking, Mobile

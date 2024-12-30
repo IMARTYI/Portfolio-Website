@@ -82,7 +82,7 @@ function Intro() {
               className="flex justify-center items-center mt-8 xl:mt-0 xl:w-1/2 fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out"
             >
               <img
-                className="rounded-full object-cover w-1/2 h-1/2 lg:w-2/3 xl:w-2/3 aspect-square"
+                className="md:rounded-full object-cover w-2/3 h-1/2 lg:w-2/3 xl:w-2/3 aspect-square rounded-md"
                 src={mainPhoto}
                 alt="A picture of David Martin"
               />
@@ -97,7 +97,7 @@ function Intro() {
         </section>
 
         <section
-          className="bg-#D4CBB5 flex flex-col space-y-5 p-10 border-green-600 border-solid fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out"
+          className=" bg-#D4CBB5 flex flex-col space-y-5 px-10 border-green-600 border-solid fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out items-center"
         >
           <h1 className="text-4xl font-serif text-white text-center">
             Education
