@@ -4,6 +4,7 @@ import AboutMe from "./about";
 import swiper from "swiper";
 
 function Intro(){
+
   const [isMenuOpen,toggleMenu] = useState(false)
 
   const openMenu = () => {
@@ -21,10 +22,10 @@ function Intro(){
           isMenuOpen ? " absolute  mt-16 flex flex-col bg-green-600 opacity-50 p-8 space-y-3" : "hidden"
         }`}
       >
-        <a href="" className="text-white font-serif ">Home</a>
-        <a href="" className="text-white font-serif">About Me</a>
-        <a href="" className="text-white font-serif">Education</a>
-        <a href="" className="text-white font-serif">Experience </a>
+        <a href="home" className="text-white font-serif ">Home</a>
+        <a href="#aboutME" className="text-white font-serif">About Me</a>
+        <a href="#education" className="text-white font-serif">Education</a>
+        <a href="#pastProjects" className="text-white font-serif">Experience </a>
 
       </div>
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -32,7 +33,7 @@ function Intro(){
           <ul className="md:flex space-x-4 hidden">
             <li className="mr-4">
               <a hraf
-                href="#section1"
+                href="#home"
                 className="bg-blue-00 bg-opacity-50 text-white rounded-md px-3 py-2 text-xl font-medium hover:bg-white hover:text-green-600 hover:transition-all duration-300"
                 aria-current="page"
               >
@@ -41,7 +42,7 @@ function Intro(){
             </li>
             <li className="mr-4">
               <a
-                href="#section2"
+                href="#aboutME"
                 className="bg-blue-00 bg-opacity-50 text-white rounded-md px-3 py-2  text-xl font-medium hover:bg-white hover:text-green-600 transition-all duration-300"
               >
                 About Me
@@ -49,7 +50,7 @@ function Intro(){
             </li>
             <li className="mr-4">
               <a
-                href="#section4"
+                href="#education"
                 className="bg-blue-00 bg-opacity-50 text-white rounded-md px-3 py-2  text-xl font-medium hover:bg-white hover:text-green-600 transition-all duration-300"
               >
                 Education
@@ -58,21 +59,14 @@ function Intro(){
 
             <li className="mr-4">
               <a
-                href="#section4"
+                href="#pastProjects"
                 className="bg-blue-00 bg-opacity-50 text-white rounded-md px-3 py-2  text-xl font-medium hover:bg-white hover:text-green-600 transition-all duration-300"
               >
                 Projects
               </a>
             </li>
 
-            <li>
-              <a
-                href="index.jsx"
-                className="bg-blue-00 bg-opacity-50 text-white rounded-md px-3 py-2 text-xl font-medium hover:bg-white hover:text-green-600 transition-all duration-300"
-              >
-                Experience
-              </a>
-            </li>
+            
           </ul>
         </div>
       </div>

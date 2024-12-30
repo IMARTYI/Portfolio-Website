@@ -38,7 +38,7 @@ function Intro() {
           <Header />
         </div>
 
-        <section className="flex flex-col xl:flex-row items-center justify-center min-h-screen">
+        <section className="flex flex-col xl:flex-row items-center justify-center min-h-screen" id="home">
           <div className="container flex flex-col xl:flex-row items-center justify-center">
             {/* Text Section */}
             <div
@@ -92,12 +92,14 @@ function Intro() {
 
         <section
           className="w-full fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out"
+          id="aboutME"
         >
           <AboutMe />
         </section>
 
         <section
           className=" bg-#D4CBB5 flex flex-col space-y-5 px-10 border-green-600 border-solid fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out items-center"
+          id="education"
         >
           <h1 className="text-4xl font-serif text-white text-center">
             Education
@@ -112,7 +114,9 @@ function Intro() {
             <h1 className="mb-12 text-center text-4xl font-serif font-bold text-white">
               Past Projects
             </h1>
-            <section className="flex justify-center w-full items-center">
+            <section className="flex justify-center w-full items-center"
+            id="pastProjects"
+            >
               <Pastprojects />
             </section>
           </section>
