@@ -6,10 +6,12 @@ import swiper from "swiper";
 function Intro(){
 
   const [isMenuOpen,toggleMenu] = useState(false)
-
+  
   const openMenu = () => {
     toggleMenu(!isMenuOpen);
   };
+
+
   return (
     <nav className=" flex flex-row bg-green-600 bg-opacity-50 w-full">
       <div className="flex justify-start md:hidden ml-10">
@@ -26,7 +28,6 @@ function Intro(){
         <a href="#aboutME" className="text-white font-serif">About Me</a>
         <a href="#education" className="text-white font-serif">Education</a>
         <a href="#pastProjects" className="text-white font-serif">Experience </a>
-
       </div>
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex justify-center h-16 items-center">

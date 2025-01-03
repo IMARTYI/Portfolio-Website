@@ -7,6 +7,7 @@ import currencyImage from "./assets/currency.png"
 
 
 function Pastprojects() {
+  
   const projects = [
     {
       title: "Full Stack Web Application",
