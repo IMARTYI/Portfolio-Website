@@ -24,9 +24,7 @@ function AboutMe() {
                 className="w-32 h-32 bg-gray-300 rounded-full mb-4"
               />
               <h1 className="text-xl text-white font-bold">David Martin</h1>
-              <button className="mt-4 bg-white text-green-600 font-semibold py-2 px-4 rounded-lg hover:bg-gray-200">
-                Resume
-              </button>
+              
             </div>
             <hr className="my-6 border-t border-gray-800" />
             <div>
