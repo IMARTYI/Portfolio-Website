@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaLaptopCode, FaLanguage, FaNetworkWired } from "react-icons/fa";
 
 function AboutMe() {
   const [isWebDevMenuOpen, setWebDevMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ function AboutMe() {
   };
 
   return (
-    <div className="">
+    <div>
       <div className="container mx-auto py-8 px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Profile Section */}
@@ -68,7 +69,10 @@ function AboutMe() {
                 }
                 className="flex items-center justify-between w-full"
               >
-                <h3 className="text-white font-bold">Web Development</h3>
+                <div className="flex items-center gap-2">
+                  <FaLaptopCode className="text-white" />
+                  <h3 className="text-white font-bold">Web Development</h3>
+                </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className={`h-5 w-5 text-white transition-transform duration-300 ${
@@ -111,9 +115,12 @@ function AboutMe() {
                 onClick={() => toggleMenu(setNlpMenuOpen, isNlpMenuOpen)}
                 className="flex items-center justify-between w-full"
               >
-                <h3 className="text-white font-bold">
-                  Natural Language Processing (NLP)
-                </h3>
+                <div className="flex items-center gap-2">
+                  <FaLanguage className="text-white" />
+                  <h3 className="text-white font-bold">
+                    Natural Language Processing (NLP)
+                  </h3>
+                </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className={`h-5 w-5 text-white transition-transform duration-300 ${
@@ -157,7 +164,10 @@ function AboutMe() {
                 }
                 className="flex items-center justify-between w-full"
               >
-                <h3 className="text-white font-bold">Computer Networking</h3>
+                <div className="flex items-center gap-2">
+                  <FaNetworkWired className="text-white" />
+                  <h3 className="text-white font-bold">Computer Networking</h3>
+                </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className={`h-5 w-5 text-white transition-transform duration-300 ${
@@ -200,9 +210,12 @@ function AboutMe() {
                 }
                 className="flex items-center justify-between w-full"
               >
-                <h3 className="text-white font-bold">
-                  Future Goals: Skateboarding Trick Recognition App
-                </h3>
+                <div className="flex items-center gap-2">
+                 
+                  <h3 className="text-white font-bold">
+                    Future Goals: Skateboarding Trick Recognition App
+                  </h3>
+                </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className={`h-5 w-5 text-white transition-transform duration-300 ${
@@ -227,7 +240,7 @@ function AboutMe() {
                     : "max-h-0 opacity-0 -translate-y-4"
                 } overflow-hidden`}
               >
-                <p className="text-white mt-2">
+                <p className="text-white mt-2 md:text-sm">
                   One of my main goals is to build an AI-powered skateboarding
                   trick recognition app. This app, called <span className="italic">Skeptic</span>, 
                   will allow users to upload videos of their tricks, which will then be 
