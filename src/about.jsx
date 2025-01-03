@@ -97,7 +97,7 @@ function AboutMe() {
                     : "max-h-0 opacity-0 -translate-y-4"
                 } overflow-hidden`}
               >
-                <p className="text-white mt-2">
+                <p className="text-white text-xs md:text-base mt-2">
                   My journey in web development began with creating a simple
                   website using just HTML. From there, I explored CSS,
                   JavaScript, and modern frameworks like React and Tailwind CSS
@@ -145,7 +145,7 @@ function AboutMe() {
                     : "max-h-0 opacity-0 -translate-y-4"
                 } overflow-hidden`}
               >
-                <p className="text-white mt-2">
+                <p className="text-white text-xs md:text-base mt-2">
                   NLP fascinates me due to its potential in bridging the gap
                   between humans and machines. I’ve worked on projects involving
                   sentiment analysis, text classification, and fine-tuning
@@ -192,12 +192,12 @@ function AboutMe() {
                     : "max-h-0 opacity-0 -translate-y-4"
                 } overflow-hidden`}
               >
-                <p className="text-white mt-2">
-                  With a strong foundation in networking from courses like 4P14,
+                <p className="text-white text-xs md:text-base mt-2">
+                  With a strong foundation in networking,
                   I am intrigued by how interconnected systems communicate
                   efficiently and securely. I’ve explored protocols, socket
                   programming, and network troubleshooting, which have deepened
-                  my understanding of this domain.
+                  my understanding of this field in computer science.
                 </p>
               </div>
             </div>
@@ -240,7 +240,7 @@ function AboutMe() {
                     : "max-h-0 opacity-0 -translate-y-4"
                 } overflow-hidden`}
               >
-                <p className="text-white mt-2 md:text-sm">
+                <p className="text-white text-xs md:text-base mt-2">
                   One of my main goals is to build an AI-powered skateboarding
                   trick recognition app. This app, called <span className="italic">Skeptic</span>, 
                   will allow users to upload videos of their tricks, which will then be 
