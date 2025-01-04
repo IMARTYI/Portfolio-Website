@@ -90,7 +90,7 @@ function Pastprojects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="flex flex-col font-bold text-white transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:translate-y-2 rounded-b-lg rounded-md"
+            className="flex flex-col font-sarif text-white transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:translate-y-2 rounded-b-lg rounded-md"
           >
             <div className="relative overflow-hidden">
               <img
@@ -100,7 +100,7 @@ function Pastprojects() {
               />
             </div>
             <div className="bg-green-600 bg-opacity-50 text-center p-3">
-              <h3 className="text-lg font-semibold">{project.title}</h3>
+              <h3 className="text-lg font-serif">{project.title}</h3>
             </div>
             <div className="text-white p-3 bg-green-600 bg-opacity-50">
               <p>{project.description}</p>
