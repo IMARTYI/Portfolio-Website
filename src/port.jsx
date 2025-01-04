@@ -106,11 +106,12 @@ function Pastprojects() {
               <p>{project.description}</p>
             </div>
             <div className="flex flex-wrap justify-between items-center p-3 bg-green-600 bg-opacity-50 rounded-b-md">
-              <div className="space-x-1">
+              <div className="space-x-1 ">
+
                 {project.badges.map((badge, i) => (
                   <span
                     key={i}
-                    className="badge bg-green-500 text-white px-2 py-1 rounded text-sm"
+                    className="badge bg-green-500 text-white px-2 py-1 rounded text-xs"
                   >
                     {badge}
                   </span>
