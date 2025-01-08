@@ -13,21 +13,21 @@ function Intro(){
 
 
   return (
-    <nav className=" flex flex-row bg-green-600 bg-opacity-50 w-full">
-      <div className="flex justify-start md:hidden ml-10">
+    <nav className=" flex flex-row bg-green-600 bg-opacity-50 w-full  ">
+      <div className="flex w-full justify-end  md:hidden ml-10">
         <button onClick={openMenu} className="text-white text-4xl">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
       <div
         className={`md:hidden  ${
-          isMenuOpen ? " absolute  mt-16 flex flex-col bg-green-600 opacity-50 p-8 space-y-3" : "hidden"
+          isMenuOpen ? "  w-full absolute  mt-16 flex flex-col justify-end bg-green-600  p-8 space-y-3 " : "hidden"
         }`}
       >
-        <a href="home" className="text-white font-serif ">Home</a>
+        <a href="#home" className="text-white font-serif ">Home</a>
         <a href="#aboutME" className="text-white font-serif">About Me</a>
         <a href="#education" className="text-white font-serif">Education</a>
-        <a href="#pastProjects" className="text-white font-serif">Experience </a>
+        <a href="#pastProjects" className="text-white font-serif">Past Projects </a>
       </div>
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex justify-center h-16 items-center">
