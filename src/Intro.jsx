@@ -50,7 +50,7 @@ function Intro() {
               <h1 className="text-white font-bold font-serif text-3xl md:text-9xl mb-8">
                 David Martin.
               </h1>
-              <p className="text-gray-300 text-lg md:text-2xl">
+              <p className="text-gray-300 text-lg md:text-2xl px-3">
                 I'm an aspiring Software Engineer passionate about exploring and
                 building with the latest technologies.
               </p>
@@ -98,7 +98,7 @@ function Intro() {
         </section>
 
         <section
-          className=" bg-#D4CBB5 flex flex-col space-y-5 px-10 border-green-600 border-solid fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out items-center"
+          className="  w-full bg-#D4CBB5 flex flex-col space-y-5  border-green-600 border-solid fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out items-center"
           id="education"
         >
           <h1 className="text-4xl font-serif font-bold text-white text-center">

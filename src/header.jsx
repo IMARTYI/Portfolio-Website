@@ -13,7 +13,7 @@ function Intro(){
 
 
   return (
-    <nav className=" flex flex-row bg-green-600 bg-opacity-50 w-full  ">
+    <nav className=" flex flex-row bg-green-800  w-full z-10 shadow-lg ">
       <div className="flex w-full justify-end  md:hidden ml-10">
         <button onClick={openMenu} className="text-white text-4xl">
           <i class="fa-solid fa-bars"></i>

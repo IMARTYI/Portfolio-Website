@@ -3,6 +3,14 @@ import { FaCode, FaProjectDiagram } from "react-icons/fa";
 import brockPhoto from "./assets/brock.png";
 
 function Education() {
+  const courses = [
+    { courseName: "COSC 2P03" },
+    { courseName: "COSC 2P12" },
+    { courseName: "COSC 3P94" },
+    { courseName: "COSC 4P14" },
+    { courseName: "COSC 4P84" },
+  ];
+
   // State to track visibility of each section
   const [showContent, setShowContent] = useState({
     courses: false,
@@ -18,11 +26,10 @@ function Education() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center m-4 w-full">
-      <div className="w-full md:w-9/12">
-        <div className="bg-green-600 shadow-xl border border-gray-300 rounded-lg hover:border-green-400 hover:shadow-2xl transition duration-300 bg-opacity-50">
+    <div className="flex flex-col items-center justify-center w-full container ">
+      <div className="w-full">
+        <div className="bg-green-800 shadow-xl border border-gray-300 rounded-lg hover:border-green-400 hover:shadow-2xl transition duration-300 ">
           <div className="p-6">
-            {/* Degree Section (Always Visible) */}
             <div className="flex flex-row justify-between items-center">
               <h5 className="md:text-xl font-serif text-white">
                 Bachelor of Science in Computer Science (Honours)
@@ -42,13 +49,13 @@ function Education() {
 
             {/* Courses Header */}
             <div className="py-2">
-              <button
-                className="text-white font-semibold flex items-center hover:text-green-200 transition duration-200"
-                onClick={() => toggleSection("courses")}
+              <div
+                className="text-white font-semibold flex items-center "
+
               >
                 <FaCode className="text-white mr-2" />
                 Relevant Course Material
-              </button>
+              </div>
             </div>
 
             {/* Courses Content */}
@@ -57,12 +64,16 @@ function Education() {
                 showContent.courses ? "max-h-screen" : "max-h-0"
               }`}
             >
-              <ul className="list-disc list-inside mt-2 text-white">
-                <li>
-                  Data Structures & Algorithms, Computer Architecture, Computer
-                  Networking, Mobile Computing, Internet Technologies, Natural
-                  Language Processing, Machine Learning
-                </li>
+              <ul className="list-none mt-2 text-white space-y-2">
+                {courses.map((course, index) => (
+                  <li key={index}>
+                    <button
+                      className="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-500 transition duration-200"
+                    >
+                      {course.courseName}
+                    </button>
+                  </li>
+                ))}
               </ul>
             </div>
 

@@ -45,7 +45,7 @@ function AboutMe() {
           </div>
 
           {/* About Me Section */}
-          <div className="col-span-1 md:col-span-3 bg-green-600 bg-opacity-50 shadow-lg rounded-lg p-6 border-white border hover:border-green-600">
+          <div className="col-span-1 md:col-span-3 bg-green-800  shadow-lg rounded-lg p-6 border-white border hover:border-green-600">
             <h2 className="text-white text-xl font-bold mb-4">About Me</h2>
             <p className="text-white">
               Welcome to my website! My name is David Martin, and I am a
