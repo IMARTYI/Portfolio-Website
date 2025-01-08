@@ -17,7 +17,7 @@ function Pastprojects() {
       image: fullstackImage,
       badges: ["Python", "HTML/CSS", "JavaScript"],
       links: {
-        github: "https://github.com/IMARTYI/Webpagee",
+        github: "https://github.com/IMARTYI/Webpage",
       },
     },
     {
