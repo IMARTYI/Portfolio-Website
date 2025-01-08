@@ -4,7 +4,9 @@ import brockPhoto from "./assets/brock.png";
 
 function Education() {
   const courses = [
-    { courseName: "COSC 2P03" },
+    { courseName: "COSC 2P03" 
+      
+    },
     { courseName: "COSC 2P12" },
     { courseName: "COSC 3P94" },
     { courseName: "COSC 4P14" },
@@ -60,9 +62,8 @@ function Education() {
 
             {/* Courses Content */}
             <div
-              className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                showContent.courses ? "max-h-screen" : "max-h-0"
-              }`}
+              className={`transition-all duration-500 ease-in-out overflow-hidden
+                `}
             >
               <ul className="list-none mt-2 text-white space-y-2">
                 {courses.map((course, index) => (

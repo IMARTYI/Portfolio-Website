@@ -98,7 +98,7 @@ function Intro() {
         </section>
 
         <section
-          className="  w-full bg-#D4CBB5 flex flex-col space-y-5  border-green-600 border-solid fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out items-center"
+          className="  w-full bg-#D4CBB5 flex flex-col space-y-5  border-green-600 border-solid fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out items-center "
           id="education"
         >
           <h1 className="text-4xl font-serif font-bold text-white text-center">
@@ -107,20 +107,21 @@ function Intro() {
           <Education />
         </section>
 
-        <div
+        <section
           className="container my-24 mx-auto md:px-6 fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out"
+          id="pastProjects"
         >
-          <section className="mb-80">
+          <div className="">
             <h1 className="mb-12 text-center text-4xl font-serif font-bold text-white">
               Past Projects
             </h1>
-            <section className="flex justify-center w-full items-center"
-            id="pastProjects"
+            <div className="flex justify-center w-full items-center"
+            
             >
               <Pastprojects />
-            </section>
-          </section>
-        </div>
+            </div>
+          </div>
+        </section>
       </div>
     </html>
   );
