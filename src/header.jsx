@@ -11,7 +11,6 @@ function Intro(){
     toggleMenu(!isMenuOpen);
   };
 
-
   return (
     <nav className=" flex flex-row bg-green-800  w-full z-10 border-shadow-lg ">
       <div className="flex w-full justify-end  md:hidden ml-10">
