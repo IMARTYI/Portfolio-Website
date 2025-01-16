@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { FaLaptopCode, FaLanguage, FaNetworkWired } from "react-icons/fa";
+import { DiJava, DiPython, DiNodejs, DiReact, DiHtml5, DiCss3 } from "react-icons/di";
+import { SiFlask, SiJavascript, SiMysql } from "react-icons/si";
+
 
 function AboutMe() {
   const [isWebDevMenuOpen, setWebDevMenuOpen] = useState(false);
@@ -31,22 +34,41 @@ function AboutMe() {
               <h3 className="text-white uppercase font-bold tracking-wider mb-2">
                 Technical Skills
               </h3>
-              <ul className="text-white space-y-2">
-                <li>Java</li>
-                <li>Python</li>
-                <li>Node</li>
-                <li>React</li>
-                <li>Flask</li>
-                <li>SQL</li>
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
+              <ul className="text-white space-y-2 font-semibold text-lg">
+                <li className="flex items-center gap-2">
+                  <DiJava className="text-yellow-500" /> Java
+                </li>
+                <li className="flex items-center gap-2">
+                  <DiPython className="text-blue-400" /> Python
+                </li>
+                <li className="flex items-center gap-2">
+                  <DiNodejs className="text-green-400" /> Node.js
+                </li>
+                <li className="flex items-center gap-2">
+                  <DiReact className="text-blue-500" /> React
+                </li>
+                <li className="flex items-center gap-2">
+                  <SiFlask className="text-gray-300" /> Flask
+                </li>
+                <li className="flex items-center gap-2">
+                  <SiMysql className="text-blue-600" /> SQL
+                </li>
+                <li className="flex items-center gap-2">
+                  <DiHtml5 className="text-orange-500" /> HTML
+                </li>
+                <li className="flex items-center gap-2">
+                  <DiCss3 className="text-blue-400" /> CSS
+                </li>
+                <li className="flex items-center gap-2">
+                  <SiJavascript className="text-yellow-300" /> JavaScript
+                </li>
               </ul>
             </div>
           </div>
 
           {/* About Me Section */}
           <div className="col-span-1 md:col-span-3 bg-green-800  shadow-lg rounded-lg p-6 border-white border hover:border-green-600">
-            <h2 className="text-white font-weight-800 text-xl font-sarif mb-4 ">About Me</h2>
+            <h2 className="text-white font-bold text-xl font-sarif mb-4 ">About Me</h2>
             <p className="text-white">
               Welcome to my website! My name is David Martin, and I am a
               Computer Science student at Brock University. I began my

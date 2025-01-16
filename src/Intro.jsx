@@ -95,14 +95,14 @@ function Intro() {
 </section>
 
         <section
-          className="w-full fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out"
+          className=" mb-20 w-full fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out"
           id="aboutME"
         >
           <AboutMe />
         </section>
 
         <section
-          className="  w-full bg-#D4CBB5 flex flex-col space-y-5  border-green-600 border-solid fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out items-center "
+          className="  w-full bg-#D4CBB5 flex flex-col space-y-5  border-green-600 border-solid fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out items-center pt-28 "
           id="education"
         >
           <h1 className="text-4xl font-serif font-bold text-white text-center">
@@ -112,7 +112,7 @@ function Intro() {
         </section>
 
         <section
-          className="container my-24 mx-auto md:px-6 fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out"
+          className="container my-24 mx-auto md:px-6 fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out pt-20"
           id="pastProjects"
         >
           <div className="">
