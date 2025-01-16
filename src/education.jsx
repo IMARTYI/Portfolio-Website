@@ -1,32 +1,41 @@
 import React, { useState } from "react";
-import { FaCode, FaProjectDiagram, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaCode, FaProjectDiagram, FaChevronDown, FaChevronUp, FaLaptopCode, FaNetworkWired, FaComments } from "react-icons/fa";
 import brockPhoto from "./assets/brock.png";
 
 function Education() {
   const courses = [
     {
-      courseName: "COSC 2P03",
-      description: "Data Structures: Explored linked lists, trees, graphs, and their applications.",
+      courseName: "COSC 2P03 - Advance Data Structures",
+      description: "This course deepened my understanding of complex data structures like trees, graphs, and hash tables, along with advanced techniques in sorting, searching, recursion, and algorithm analysis. I gained hands-on experience implementing and optimizing these structures for various real-world applications.",
+      icon: <FaLaptopCode />,
     },
     {
-      courseName: "COSC 2P12",
-      description: "Algorithms: Studied sorting, searching, and optimization techniques.",
+      courseName: "COSC 2P12 - Computer Architecture",
+      description: "Focusing on the evolution of digital computers, this course covered the architecture of modern computers, including functional units, control, buses, and memory management. I developed a strong understanding of low-level computer operations and programming in assembly language.",
+      icon: <FaCode />,
     },
     {
-      courseName: "COSC 3P94",
-      description: "Artificial Intelligence: Covered foundational AI concepts and their practical applications.",
+      courseName: "COSC 3P94 - Human Computer Interaction",
+      description: "This course explored the human aspect of computing, teaching me to design user-friendly systems by considering human factors and various interaction paradigms. I applied design methodologies such as GOMS and Task Analysis to optimize the user experience.",
+      icon: <FaComments />,
     },
     {
-      courseName: "COSC 4P14",
-      description: "Computer Networking: Focused on networking protocols and distributed systems.",
+      courseName: "COSC 4P14 - Advanced Computer Networks",
+      description: "Through this course, I gained expertise in networking protocols and distributed systems, with a focus on their applications and underlying principles. This course has strengthened my understanding of modern networking technologies.",
+      icon: <FaNetworkWired />,
     },
     {
-      courseName: "COSC 4P84",
-      description: "Machine Learning: Explored advanced ML algorithms and fine-tuning techniques.",
+      courseName: "COSC 4P84 - Natural Language Processing",
+      description: "I explored the intersection of machine learning and natural language processing, learning advanced algorithms and techniques for processing and understanding human language. This course equipped me with the knowledge to apply these techniques to real-world tasks like sentiment analysis and language modeling.",
+      icon: <FaCode />,
+    },
+    {
+      courseName: "COSC 3P95 - Software Testing",
+      description: "This course focused on various software development principles beyond programming, such as debugging, testing, and performance evaluation. I learned techniques for ensuring software quality through static and dynamic analysis, regression testing, and defect tracking.",
+      icon: <FaCode />,
     },
   ];
 
-  // State to track visibility of each section and course descriptions
   const [showContent, setShowContent] = useState({
     courses: false,
     projects: false,
@@ -34,7 +43,6 @@ function Education() {
 
   const [visibleDescriptions, setVisibleDescriptions] = useState({});
 
-  // Toggle visibility of a section
   const toggleSection = (section) => {
     setShowContent((prevState) => ({
       ...prevState,
@@ -42,7 +50,6 @@ function Education() {
     }));
   };
 
-  // Toggle visibility of a course description
   const toggleDescription = (index) => {
     setVisibleDescriptions((prevState) => ({
       ...prevState,
@@ -71,6 +78,9 @@ function Education() {
                 />
               </div>
             </div>
+            <p className="text-white font-serif pt-12">
+              Throughout my Bachelor of Science in Computer Science (Honours) at Brock University, I have undertaken a variety of challenging and enriching courses that have shaped my skills and knowledge in both foundational and advanced areas of computer science.
+            </p>
 
             {/* Courses Header */}
             <div className="py-2">
@@ -82,26 +92,34 @@ function Education() {
 
             {/* Courses Content */}
             <div className="transition-all duration-500 ease-in-out overflow-hidden">
-              <ul className="list-none mt-2 text-white space-y-2">
+              <ul className="list-none mt-2 text-white space-y-2 font-semibold">
                 {courses.map((course, index) => (
                   <li key={index}>
                     <div className="flex flex-col">
                       <button
                         onClick={() => toggleDescription(index)}
-                        className="bg-green-700 text-white px-4 py-2 rounded-lg flex items-center justify-between hover:bg-green-500 transition duration-200"
+                        className="text-left text-white flex items-center justify-between hover:text-green-500 transition duration-200"
                       >
-                        {course.courseName}
+                        <span className="flex items-center space-x-2">
+                          {course.icon}
+                          <span>{course.courseName}</span>
+                        </span>
                         {visibleDescriptions[index] ? (
                           <FaChevronUp className="ml-2" />
                         ) : (
                           <FaChevronDown className="ml-2" />
                         )}
                       </button>
-                      {visibleDescriptions[index] && (
+                      {/* Slide-down animation for description */}
+                      <div
+                        className={`overflow-hidden transition-all duration-500 ease-in-out max-h-0 ${
+                          visibleDescriptions[index] ? "max-h-screen" : ""
+                        }`}
+                      >
                         <p className="mt-2 text-sm text-gray-200 bg-green-600 rounded-lg p-4">
                           {course.description}
                         </p>
-                      )}
+                      </div>
                     </div>
                   </li>
                 ))}
