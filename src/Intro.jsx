@@ -95,7 +95,7 @@ function Intro() {
 </section>
 
         <section
-          className=" mb-20 w-full fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out"
+          className=" mb-20 w-full fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out pt-20"
           id="aboutME"
         >
           <AboutMe />
