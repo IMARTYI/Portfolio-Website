@@ -1,12 +1,12 @@
 import React from "react";
 
-import FTPImage from "../assets/FTP.png";
-import SkateImage from "../assets/skate.png";
-import translateImage from "../assets/translate.png";
-import currencyImage from "../assets/currency.png";
-import snakeImage from "../assets/snake.png";
-import scheduleImage from "../assets/schedule.png"
-import SketchifyImage from "../assets/SketchifyImage.png"
+import FTPImage from "./assets/FTP.png";
+import SkateImage from "./assets/skate.png";
+import translateImage from "./assets/translate.png";
+import currencyImage from "./assets/currency.png";
+import snakeImage from "./assets/snake.png";
+import scheduleImage from "./assets/schedule.png"
+import SketchifyImage from "./assets/SketchifyImage.png"
 
 
 function Pastprojects() {
