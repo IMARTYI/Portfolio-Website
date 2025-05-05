@@ -1,5 +1,5 @@
 import React from "react";
-import fullstackImage from "../assets/fullstack.png";
+
 import FTPImage from "../assets/FTP.png";
 import SkateImage from "../assets/skate.png";
 import translateImage from "../assets/translate.png";
