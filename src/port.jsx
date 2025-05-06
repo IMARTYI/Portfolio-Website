@@ -1,23 +1,25 @@
 import React from "react";
-import fullstackImage from "./assets/fullstack.png";
+
 import FTPImage from "./assets/FTP.png";
 import SkateImage from "./assets/skate.png";
 import translateImage from "./assets/translate.png";
 import currencyImage from "./assets/currency.png";
 import snakeImage from "./assets/snake.png";
 import scheduleImage from "./assets/schedule.png"
+import SketchifyImage from "./assets/SketchifyImage.png"
 
 
 function Pastprojects() {
   const projects = [
     {
-      title: "Full Stack Web Application",
+      title: "Sketchify",
       description:
-        "This simple Fullstack application was built using modern tools and technologies.",
-      image: fullstackImage,
-      badges: ["Python", "HTML/CSS", "JavaScript"],
+        " A cutting edge AI powered application that generates enhanced Images from user Sketches, utilizing Gemini and Imagen 3.0",
+      image: SketchifyImage,
+      badges: ["Python", "Next Js", "React","Flask"],
       links: {
         github: "https://github.com/IMARTYI/Webpage",
+        demo:  "https://sketchify-live.vercel.app/"
       },
     },
     {
@@ -28,6 +30,7 @@ function Pastprojects() {
       badges: ["Python", "Flask", "Open Telemetry"],
       links: {
         github: "https://github.com/IMARTYI/FTP-Server-with-Flask",
+        demo: "https://github.com/IMARTYI/FTP-Server-with-Flask"
       },
     },
     {
@@ -38,6 +41,7 @@ function Pastprojects() {
       badges: ["Python", "Open CV", "Media Pipe", "Pytorch"],
       links: {
         github: "https://github.com/IMARTYI/Skateboard-trick-classifier-",
+        demo: "https://github.com/IMARTYI/Skateboard-trick-classifier-"
       },
     },
     {
@@ -48,6 +52,7 @@ function Pastprojects() {
       badges: ["Java", "XML", "SQLite", "Google Translate API"],
       links: {
         github: "https://github.com/Bfernandez02/Translator-App",
+        demo: "https://github.com/Bfernandez02/Translator-App"
       },
     },
     {
@@ -58,6 +63,7 @@ function Pastprojects() {
       badges: ["HTML", "CSS", "JavaScript"],
       links: {
         github: "https://github.com/IMARTYI/CurrencyExchange",
+        demo: "https://github.com/IMARTYI/CurrencyExchange"
       },
     },
     {
@@ -68,6 +74,7 @@ function Pastprojects() {
       badges: ["Java"],
       links: {
         github: "https://github.com/IMARTYI/BasicsnakeGame",
+        demo: "https://github.com/IMARTYI/BasicsnakeGame"
       },
     },
 
@@ -79,9 +86,9 @@ function Pastprojects() {
   badges: ["Java", "Android Studio", "SQLite"],
   links: {
     github: "https://github.com/IMARTYI/MeetingPlannerAndroid",
+    demo:"https://github.com/IMARTYI/MeetingPlannerAndroid"
   },
 }
-
   ];
 
   return (
@@ -93,11 +100,14 @@ function Pastprojects() {
             className="flex flex-col font-sarif text-white transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:translate-y-2 rounded-b-lg rounded-md"
           >
             <div className="relative overflow-hidden">
+              <a href={project.links.demo}>
               <img
                 className="w-full h-64 object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 rounded-t-md"
                 src={project.image}
                 alt={project.title}
               />
+              </a>
+            
             </div>
             <div className="bg-green-600 bg-opacity-50 text-center p-3 ">
               <h3 className="text-lg font-serif">{project.title}</h3>
