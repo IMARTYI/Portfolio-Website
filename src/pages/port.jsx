@@ -110,7 +110,7 @@ function Pastprojects() {
             
             </div>
             <div className="bg-green-600 bg-opacity-50 text-center p-3 ">
-              <h3 className="text-lg font-serif">{project.title}</h3>
+              <h3 className="text-lg font-sans">{project.title}</h3>
             </div>
             <div className="text-white p-3 bg-green-600 bg-opacity-50">
               <p>{project.description}</p>

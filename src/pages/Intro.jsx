@@ -118,7 +118,7 @@ function Intro() {
         </section>
 
         <section
-          className="  w-full flex flex-col space-y-5  fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out items-center pt-28  animate-fadeSlideIn"
+          className="  w-full flex flex-col space-y-5  fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out items-center pb-32  animate-fadeSlideIn"
           id="education"
         >
           <h1 className="text-4xl font-serif font-bold text-white text-center">
