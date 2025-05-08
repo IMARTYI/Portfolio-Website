@@ -12,7 +12,7 @@ function Intro() {
   };
 
   return (
-    <nav className="flex flex-row bg-green-800 w-full z-10 shadow-lg">
+    <nav className="flex flex-row w-full z-20 shadow-xl fixed top-0 left-0">
       {/* Mobile Menu Button */}
       <div className="flex w-full justify-end md:hidden ml-10">
         <button onClick={openMenu} className="text-white text-4xl">
@@ -24,7 +24,7 @@ function Intro() {
       <div
         className={`md:hidden ${
           isMenuOpen
-            ? "w-full absolute mt-16 flex flex-col justify-end bg-green-600 p-8 space-y-3"
+            ? "w-full absolute mt-16 flex flex-col justify-end z-20 p-8 space-y-3 shadow-lg"
             : "hidden"
         }`}
       >
@@ -44,42 +44,52 @@ function Intro() {
 
       {/* Desktop Menu */}
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="flex justify-center h-16 items-center">
-          <ul className="md:flex space-x-4 hidden">
-            <li className="mr-4">
-              <a
-                href="#home"
-                className="bg-opacity-50 text-white rounded-md px-3 py-2 text-xl font-medium hover:bg-white hover:text-green-600 transition-all duration-300"
-              >
-                Home
-              </a>
-            </li>
-            <li className="mr-4">
-              <a
-                href="#aboutME"
-                className="bg-opacity-50 text-white rounded-md px-3 py-2 text-xl font-medium hover:bg-white hover:text-green-600 transition-all duration-300"
-              >
-                About Me
-              </a>
-            </li>
-            <li className="mr-4">
-              <a
-                href="#education"
-                className="bg-opacity-50 text-white rounded-md px-3 py-2 text-xl font-medium hover:bg-white hover:text-green-600 transition-all duration-300"
-              >
-                Education
-              </a>
-            </li>
-            <li className="mr-4">
-              <a
-                href="#pastProjects"
-                className="bg-opacity-50 text-white rounded-md px-3 py-2 text-xl font-medium hover:bg-white hover:text-green-600 transition-all duration-300"
-              >
-                Projects
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+  <div className="flex justify-center h-16 items-center">
+    <ul className="md:flex space-x-4 hidden">
+      <li className="mr-4">
+        <a
+          href="#home"
+          className="bg-opacity-50 text-white rounded-md px-3 py-2 text-xl font-medium hover:text-green-600 transition-all duration-300 relative group"
+        >
+          Home
+          <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-green-600 transition-all duration-300 group-hover:w-full" 
+                style={{ bottom: "-3px" }}></span>
+        </a>
+      </li>
+      <li className="mr-4">
+        <a
+          href="#aboutME"
+          className="bg-opacity-50 text-white rounded-md px-3 py-2 text-xl font-medium hover:text-green-600 transition-all duration-300 relative group"
+        >
+          About Me
+          <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-green-600 transition-all duration-300 group-hover:w-full" 
+                style={{ bottom: "-3px" }}></span>
+        </a>
+      </li>
+      <li className="mr-4">
+        <a
+          href="#pastProjects"
+          className="bg-opacity-50 text-white rounded-md px-3 py-2 text-xl font-medium hover:text-green-600 transition-all duration-300 relative group"
+        >
+          Projects
+          <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-green-600 transition-all duration-300 group-hover:w-full" 
+                style={{ bottom: "-3px" }}></span>
+        </a>
+      </li>
+      <li className="mr-4">
+        <a
+          href="#education"
+          className="bg-opacity-50 text-white rounded-md px-3 py-2 text-xl font-medium hover:text-green-600 transition-all duration-300 relative group"
+        >
+          Education
+          <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-green-600 transition-all duration-300 group-hover:w-full" 
+                style={{ bottom: "-3px" }}></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
       </div>
     </nav>
   );
