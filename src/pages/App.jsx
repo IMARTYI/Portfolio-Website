@@ -17,8 +17,8 @@ function Appication() {
   content= <Intro/>
   return (
 
-    <div class=''>
-      <div  class="">      
+    <div className=''>
+      <div  className="">      
         {content}
       </div>
       

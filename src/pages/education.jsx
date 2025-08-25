@@ -138,7 +138,7 @@ function Section({
             <div className="flex flex-col">
               <button
                 onClick={() => toggleDescription(category, index)}
-                className="bg-green-700 text-white px-4 py-2 rounded-lg flex items-center justify-between hover:bg-green-500 transition duration-200"
+                className="bg-green-700 bg-opacity-50 text-white px-4 py-2 rounded-lg flex items-center justify-between hover:bg-green-500 transition duration-200"
               >
                 {item[category === "courses" ? "courseName" : "projectName"]}
                 {visibleDescriptions[category][index] ? (

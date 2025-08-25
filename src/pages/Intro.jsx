@@ -6,35 +6,16 @@ import mainPhoto from "../assets/IMG_0772.jpg";
 import Education from "./education";
 import Background from "../components/background";
 import { useIntersectionObserver } from "../components/fadeIn";
+import { Experience } from "../components/Experience";
 
 function Intro() {
-  useIntersectionObserver()  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           entry.target.classList.add("opacity-100", "translate-y-0");
-  //           entry.target.classList.remove("opacity-0", "translate-y-10");
-  //         } else {
-  //           entry.target.classList.remove("opacity-100", "translate-y-0");
-  //           entry.target.classList.add("opacity-0", "translate-y-10");
-  //         }
-  //       });
-  //     },
-  //     { threshold: 0.1 } // Adjust the threshold as needed
-  //   );
-
-  //   const elements = document.querySelectorAll(".fade-in");
-  //   elements.forEach((el) => observer.observe(el));
-
-  //   return () => observer.disconnect();
-  // }, []);
+  useIntersectionObserver();
 
   return (
+
     <html lang="en" className="!scroll-smooth">
-     
+      <Background />
       <div lang="en" className="!scroll-smooth font-sans antialiased">
-        <Background/>
         <div className="fixed w-full shadow-md z-20">
           <Header />
         </div>
@@ -51,7 +32,7 @@ function Intro() {
                 Hello, My name is
               </p>
               <h1 className="text-white font-bold font-serif text-3xl md:text-9xl mb-8">
-                David Martin
+                 David Martin
               </h1>
               <p className="text-gray-300 text-lg md:text-2xl px-3">
                 I'm a Software Engineer passionate about exploring and building
@@ -88,37 +69,50 @@ function Intro() {
               }} /* Optional delay for staggered effect */
             >
               <img
-                className="md:rounded-full object-cover w-2/3 h-1/2 lg:w-2/3 xl:w-2/3 aspect-square rounded-md "
+                className="md:rounded-full object-cover w-2/3 h-2/3 aspect-square lg:w-2/3 xl:w-2/3  rounded-full  "
                 src={mainPhoto}
                 alt="A picture of David Martin"
               />
             </div>
           </div>
         </section>
-
+        {/* About Section */}
         <section
-          className=" mb-20 w-full fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out pt-20 animate-fadeSlideIn"
-          id="aboutME" 
+          className="scroll-animate opacity-0 -translate-y-10 transition-all duration-700 mb-20 w-full pt-20"
+          id="Experience"
+        >
+          <h1 className="mb-12 text-center text-4xl font-serif font-bold text-white">
+              Experience
+            </h1>
+          <Experience />
+        </section>
+
+        {/* About Section */}
+        <section
+          className="scroll-animate opacity-0 -translate-y-10 transition-all duration-700 mb-20 w-full pt-20"
+          id="aboutME"
         >
           <AboutMe />
         </section>
 
+        {/* Projects Section */}
         <section
-          className=" my-24  md:px-6 fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out pt-20  w-full items-center"
+          className="scroll-animate opacity-0 -translate-y-10 transition-all duration-700 my-24 md:px-6 pt-20 w-full items-center"
           id="pastProjects"
         >
-          <div className="  flex flex-col items-center justify-center">
+          <div className="max-w-7xl mx-auto">
             <h1 className="mb-12 text-center text-4xl font-serif font-bold text-white">
               Projects
             </h1>
-            <div className="flex justify-center  items-center">
+            <div className="flex justify-center items-center">
               <Pastprojects />
             </div>
           </div>
         </section>
 
+        {/* Education Section */}
         <section
-          className="  w-full flex flex-col space-y-5  fade-in opacity-0 translate-y-10 transition-opacity duration-700 ease-out items-center pb-32  animate-fadeSlideIn"
+          className="scroll-animate opacity-0 -translate-y-10 transition-all duration-700 w-full flex flex-col space-y-5 items-center pb-32"
           id="education"
         >
           <h1 className="text-4xl font-serif font-bold text-white text-center">

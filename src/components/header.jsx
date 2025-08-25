@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import Header from "./header";
 import AboutMe from "../pages/about";
 
@@ -9,37 +9,112 @@ function Intro() {
 
   const openMenu = () => {
     toggleMenu(!isMenuOpen);
+    // Prevent scrolling when menu is open
+    document.body.style.overflow = !isMenuOpen ? 'hidden' : 'unset';
+  };
+
+  const handleMenuClick = (e, id) => {
+    e.preventDefault();
+    toggleMenu(false);
+    document.body.style.overflow = 'unset';
+    
+    const element = document.querySelector(id);
+    element?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <nav className="flex flex-row w-full z-20 shadow-xl fixed top-0 left-0">
+    <nav className="flex flex-row w-full z-50 shadow-xl fixed top-0 left-0">
       {/* Mobile Menu Button */}
-      <div className="flex w-full justify-end md:hidden ml-10">
-        <button onClick={openMenu} className="text-white text-4xl">
-          <FontAwesomeIcon icon={faBars} />
+      <div className="flex w-full justify-end md:hidden">
+        <button 
+          onClick={openMenu} 
+          className={`text-white text-3xl p-4 z-50 transition-all duration-300 ${
+            isMenuOpen ? 'rotate-90' : ''
+          }`}
+          aria-label="Toggle menu"
+        >
+          <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
         </button>
       </div>
 
-      {/* Dropdown Menu for Mobile */}
+      {/* Mobile Menu Overlay */}
+      <div 
+        className={`fixed inset-0 md:hidden transition-all duration-300 
+          ${isMenuOpen ? 'visible bg-black/30 backdrop-blur-md' : 'invisible'}`}
+        onClick={() => toggleMenu(false)}
+      />
+
+      {/* Mobile Menu Content */}
       <div
-        className={`md:hidden ${
-          isMenuOpen
-            ? "w-full absolute mt-16 flex flex-col justify-end z-20 p-8 space-y-3 shadow-lg"
-            : "hidden"
-        }`}
+        className={`fixed inset-y-0 right-0 w-64 bg-black/50 backdrop-blur-xl 
+          md:hidden flex flex-col justify-center items-center transform transition-transform duration-300
+          ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <a href="#home" className="text-white font-serif">
-          Home
-        </a>
-        <a href="#aboutME" className="text-white font-serif">
-          About Me
-        </a>
-        <a href="#education" className="text-white font-serif">
-          Education
-        </a>
-        <a href="#pastProjects" className="text-white font-serif">
-          Past Projects
-        </a>
+        <nav className="flex flex-col space-y-8 text-center">
+          {/*
+            { href: '#home', text: 'Home' },
+            { href: '#aboutME', text: 'About Me' },
+            { href: '#experience', text: 'Experience' },
+            { href: '#education', text: 'Education' },
+            { href: '#pastProjects', text: 'Projects' }
+          ].map((item, index) => (
+            <a
+              key={item.href}
+              href={item.href}
+              onClick={(e) => handleMenuClick(e, item.href)}
+              className="relative text-white text-2xl font-space group"
+              style={{
+                opacity: 0,
+                animation: isMenuOpen 
+                  ? `fadeIn 0.3s ease-out forwards ${index * 0.1}s` 
+                  : 'none'
+              }}
+            >
+              <span className="relative z-10">{item.text}</span>
+              <span className="absolute inset-0 bg-white/10 rounded-lg opacity-0 
+                group-hover:opacity-100 transition-opacity duration-300" />
+            </a>
+          ))}
+          */}
+          <a
+            href="#home"
+            onClick={(e) => handleMenuClick(e, "#home")}
+            className="text-white text-3xl  hover:text-green-500 transition-colors duration-300 font-serif z-20"
+          >
+            Home
+          </a>
+           <a
+            href="#home"
+            onClick={(e) => handleMenuClick(e, "#Experience")}
+            className="text-white text-3xl  hover:text-green-500 transition-colors duration-300 font-serif z-20"
+          >
+            Experience
+          </a>
+          <a
+            href="#aboutME"
+            onClick={(e) => handleMenuClick(e, "#aboutME")}
+            className="text-white text-3xl  hover:text-green-500 transition-colors duration-300 font-serif"
+          >
+            About Me
+          </a>
+          <a
+            href="#pastProjects"
+            onClick={(e) => handleMenuClick(e, "#aboutME")}
+            className="text-white text-3xl  hover:text-green-500 transition-colors duration-300 font-serif"
+          >
+            Projects
+          </a>
+         
+            <a
+            href="#education"
+            onClick={(e) => handleMenuClick(e, "#education")}
+            className="text-white text-3xl hover:text-green-500 transition-colors duration-300 font-serif"
+          >
+            Education
+          </a>
+          
+        
+        </nav>
       </div>
 
       {/* Desktop Menu */}
@@ -53,6 +128,16 @@ function Intro() {
           className="bg-opacity-50 text-white rounded-md px-3 py-2 text-xl font-medium hover:text-green-600 transition-all duration-300 relative group"
         >
           Home
+          <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-green-600 transition-all duration-300 group-hover:w-full" 
+                style={{ bottom: "-3px" }}></span>
+        </a>
+      </li>
+       <li className="mr-4">
+        <a
+          href="#Experience"
+          className="bg-opacity-50 text-white rounded-md px-3 py-2 text-xl font-medium hover:text-green-600 transition-all duration-300 relative group"
+        >
+          Experience
           <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-green-600 transition-all duration-300 group-hover:w-full" 
                 style={{ bottom: "-3px" }}></span>
         </a>
