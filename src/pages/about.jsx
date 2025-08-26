@@ -34,7 +34,8 @@ function AboutMe() {
               <h3 className="text-white uppercase font-bold tracking-wider mb-2">
                 Technical Skills
               </h3>
-              <ul className="text-white space-y-2 font-semibold text-lg">
+              <ul className="text-white space-y-2 font-serif text-2xl
+              ">
                 <li className="flex items-center gap-2">
                   <DiJava className="text-yellow-500" /> Java
                 </li>
