@@ -40,8 +40,8 @@ function Pastprojects() {
       image: SkateImage,
       badges: ["Python", "Open CV", "Media Pipe", "Pytorch"],
       links: {
-        github: "https://github.com/IMARTYI/Skateboard-trick-classifier-",
-        demo: "https://github.com/IMARTYI/Skateboard-trick-classifier-"
+        github: "https://github.com/IMARTYI/Skateboard-Trick-Classifier",
+        demo: "https://github.com/IMARTYI/Skateboard-Trick-Classifier"
       },
     },
     {
